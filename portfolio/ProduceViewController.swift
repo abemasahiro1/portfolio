@@ -13,35 +13,36 @@ class ProduceViewController: UIViewController {
     @IBOutlet weak var month: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var body: UITextView!
+    @IBOutlet weak var image: UIImageView!
     var produce: Produce?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let produces = createProduces()
         produce = produces[5]
         month.text = produce?.month
         name.text = produce?.name
         body.text = produce?.body
+        image.image = produce?.image
         
         // Do any additional setup after loading the view.
     }
     
     private func createProduces() -> [Produce] {
         var produces:[Produce] = []
-        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "2月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "3月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "4月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "5月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "6月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "7月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "8月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "9月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "10月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "11月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        produces.append(Produce(month: "12月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます"))
-        
-        
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
+        produces.append(Produce(month: "1月", name: "イチゴ", body: "苗箱に土を入れ種をまた土にかぶせて水をやり次の日にハウスの中に入れ苗を育てます", image: #imageLiteral(resourceName: "3")))
         return produces
     }
     /*

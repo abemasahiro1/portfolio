@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 struct Produce  {
     var month:String
     var name:String
     var body:String
-    
+    var image:UIImage
 }
