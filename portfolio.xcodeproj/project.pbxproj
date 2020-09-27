@@ -14,6 +14,7 @@
 		38367F4B251587400051A112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38367F4A251587400051A112 /* Assets.xcassets */; };
 		38367F4E251587400051A112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38367F4C251587400051A112 /* LaunchScreen.storyboard */; };
 		38367F5625159BC40051A112 /* ProduceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38367F5525159BC40051A112 /* ProduceViewController.swift */; };
+		38EA5AE0252049C0008BB783 /* Produce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EA5ADF252049C0008BB783 /* Produce.swift */; };
 		6CED690BE6E80949283F5DC1 /* Pods_portfolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E518D0A0E792B9E963B76B10 /* Pods_portfolio.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		38367F4D251587400051A112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38367F4F251587400051A112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38367F5525159BC40051A112 /* ProduceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduceViewController.swift; sourceTree = "<group>"; };
+		38EA5ADF252049C0008BB783 /* Produce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produce.swift; sourceTree = "<group>"; };
 		64754D340E71F17DBA30ED53 /* Pods-portfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portfolio.debug.xcconfig"; path = "Target Support Files/Pods-portfolio/Pods-portfolio.debug.xcconfig"; sourceTree = "<group>"; };
 		8D714162C34A0E1A5FF5A8DC /* Pods-portfolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portfolio.release.xcconfig"; path = "Target Support Files/Pods-portfolio/Pods-portfolio.release.xcconfig"; sourceTree = "<group>"; };
 		E518D0A0E792B9E963B76B10 /* Pods_portfolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_portfolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 				38367F452515873C0051A112 /* ViewController.swift */,
 				38367F472515873C0051A112 /* Main.storyboard */,
 				38367F5525159BC40051A112 /* ProduceViewController.swift */,
+				38EA5ADF252049C0008BB783 /* Produce.swift */,
 				38367F4A251587400051A112 /* Assets.xcassets */,
 				38367F4C251587400051A112 /* LaunchScreen.storyboard */,
 				38367F4F251587400051A112 /* Info.plist */,
@@ -211,6 +214,7 @@
 			files = (
 				38367F462515873C0051A112 /* ViewController.swift in Sources */,
 				38367F422515873C0051A112 /* AppDelegate.swift in Sources */,
+				38EA5AE0252049C0008BB783 /* Produce.swift in Sources */,
 				38367F442515873C0051A112 /* SceneDelegate.swift in Sources */,
 				38367F5625159BC40051A112 /* ProduceViewController.swift in Sources */,
 			);
