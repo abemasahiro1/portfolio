@@ -27,7 +27,8 @@ class ProduceViewController: UIViewController {
         name.text = produce?.name
         body.text = produce?.body
         image.image = produce?.image
-        
+        image.layer.cornerRadius = 25.0
+        image.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
     
