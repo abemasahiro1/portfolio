@@ -15,12 +15,14 @@ class ProduceViewController: UIViewController {
     @IBOutlet weak var body: UITextView!
     @IBOutlet weak var image: UIImageView!
     var produce: Produce?
+    var monthInt: Int?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let produces = createProduces()
-        produce = produces[12 - 1]
+        produce = produces[monthInt! - 1]
         month.text = produce?.month
         name.text = produce?.name
         body.text = produce?.body
