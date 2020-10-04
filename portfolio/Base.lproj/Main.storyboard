@@ -25,20 +25,12 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleWeekendColor">
                                         <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="YYYY年MM月"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wh7-T0-RxM">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="g5H-B3-tBr" kind="show" id="gAH-6n-yt3"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wh7-T0-RxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5lv-bV-UJn"/>
-                            <constraint firstItem="wh7-T0-RxM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PqD-dR-V83"/>
                             <constraint firstItem="6qm-Z5-tj9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z25-mx-ARI"/>
                             <constraint firstItem="6qm-Z5-tj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eXE-1c-C7W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6qm-Z5-tj9" secondAttribute="trailing" id="jnX-Ea-RNh"/>
@@ -48,11 +40,12 @@
                     </view>
                     <connections>
                         <outlet property="calendar" destination="6qm-Z5-tj9" id="Ytv-gT-jAb"/>
+                        <segue destination="g5H-B3-tBr" kind="show" identifier="goProduce" id="HKH-dC-d6b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-761" y="106"/>
+            <point key="canvasLocation" x="-949" y="112"/>
         </scene>
         <!--Produce View Controller-->
         <scene sceneID="D2j-na-ivi">
