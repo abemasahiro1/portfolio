@@ -36,7 +36,9 @@ class ViewController: UIViewController,FSCalendarDataSource, FSCalendarDelegate,
         performSegue(withIdentifier: "goProduce", sender: nil)
     }
     func calendarCurrentPageDidChange(_ calendar: FSCalendar) {
-             switch Calendar.current.component(.month, from: calendar.currentPage) {
+        
+        UIView.animate(withDuration: 1.0, delay: 0.0, animations: {
+            switch Calendar.current.component(.month, from: calendar.currentPage) {
             case 1:
                 self.view.backgroundColor = UIColor.lightGray
             case 2:
@@ -64,6 +66,8 @@ class ViewController: UIViewController,FSCalendarDataSource, FSCalendarDelegate,
             default:
                 break
             }
+        }, completion:nil)
+        
     }
     }
 
