@@ -34,6 +34,7 @@ class ProduceViewController: UIViewController {
     
     private func createProduces() -> [Produce] {
         var produces:[Produce] = []
+        
         produces.append(Produce(month: "1月", name: "レモン", body: "レモンの原産地はインドのヒマラヤ山麓です。生産量日本一は広島県でとくに生口島は島の約半分が急傾斜になっているため日当りが良く、瀬戸内海でも指折りの柑橘類の産地となっています。", image: #imageLiteral(resourceName: "1")))
         produces.append(Produce(month: "2月", name: "柚子", body: "中華人民共和国中央および西域、揚子江上流の原産であると言われています。高知県が生産量一位で1960年代から林業や和紙原料製造に代わる山村集落の活性化策として産地が相次いで形成され、県を取り囲むようにユズ産地が展開するようになりました。", image: #imageLiteral(resourceName: "2")))
         produces.append(Produce(month: "3月", name: "キウイ", body: "1904年ニュージーランドに種子が持ち込まれ栽培されニュージーランドを代表する果実として世界中に輸出されています。愛媛県が生産量一位です。専門知識がなくても比較的簡単に栽培ができ、苗は一般向けにホームセンターなどの園芸コーナーで容易に入手できるそうです。雄雌を1株ずつ植え、藤棚を使い蔓（ツル）を上手くはわせて栽培すれば、10月から11月頃には果実が収穫です。", image: #imageLiteral(resourceName: "3")))

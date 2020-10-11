@@ -35,5 +35,8 @@ class ViewController: UIViewController,FSCalendarDataSource, FSCalendarDelegate,
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         performSegue(withIdentifier: "goProduce", sender: nil)
     }
+    func calendarCurrentPageDidChange(_ calendar: FSCalendar) {
+        self.view.backgroundColor = UIColor.red
+    }
 }
 
