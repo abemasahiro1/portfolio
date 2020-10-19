@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qm-Z5-tj9" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="30" y="74" width="354" height="758"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
@@ -26,6 +26,18 @@
                                         <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="headerDateFormat" value="YYYY年MM月"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleTextSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="headerTitleTextSize">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="headerTitleColor">
+                                        <color key="value" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="weekdayTextColor">
+                                        <color key="value" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qXs-RX-r6l">
@@ -36,11 +48,11 @@
                         <constraints>
                             <constraint firstItem="qXs-RX-r6l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8JP-fh-xJo"/>
                             <constraint firstItem="qXs-RX-r6l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XZt-d6-5pU"/>
-                            <constraint firstItem="6qm-Z5-tj9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Z25-mx-ARI"/>
-                            <constraint firstItem="6qm-Z5-tj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eXE-1c-C7W"/>
+                            <constraint firstItem="6qm-Z5-tj9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Z25-mx-ARI"/>
+                            <constraint firstItem="6qm-Z5-tj9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="eXE-1c-C7W"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qXs-RX-r6l" secondAttribute="trailing" id="ffV-ex-AaO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6qm-Z5-tj9" secondAttribute="trailing" id="jnX-Ea-RNh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6qm-Z5-tj9" secondAttribute="bottom" id="p4t-1k-OCM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6qm-Z5-tj9" secondAttribute="trailing" constant="30" id="jnX-Ea-RNh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6qm-Z5-tj9" secondAttribute="bottom" constant="30" id="p4t-1k-OCM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qXs-RX-r6l" secondAttribute="bottom" id="tPW-kj-WOF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
