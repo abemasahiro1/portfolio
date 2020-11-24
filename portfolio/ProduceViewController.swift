@@ -14,6 +14,8 @@ class ProduceViewController: UIViewController {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var body: UITextView!
     @IBOutlet weak var image: UIImageView!
+    
+    @IBOutlet weak var back: UIImageView!
     var produce: Produce?
     var monthInt: Int?
     
@@ -24,11 +26,16 @@ class ProduceViewController: UIViewController {
         let produces = createProduces()
         produce = produces[monthInt! - 1]
         month.text = produce?.month
+    
         name.text = produce?.name
         body.text = produce?.body
+        body.layer.cornerRadius = 10.0
+        body.layer.borderWidth = 1.0
+        body.isScrollEnabled = false
         image.image = produce?.image
         image.layer.cornerRadius = 25.0
         image.clipsToBounds = true
+        back.alpha = 0.1
         // Do any additional setup after loading the view.
     }
     
